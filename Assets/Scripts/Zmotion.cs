@@ -11,6 +11,7 @@ public class Zmotion : MonoBehaviour
     public float health;
     public GameObject end;
     public TextMeshProUGUI endtext;
+    public float score = 0;
 
     private CapsuleCollider colider;
     private bool isSlidingUp = false;

@@ -13,6 +13,8 @@ public class DyamicEnemy : MonoBehaviour
     public Transform player;
     public float speed = 3f;
 
+    
+
     public SimpleShoot shooter;
     //private bool playerInRange = false;
     private Vector3 Delta;

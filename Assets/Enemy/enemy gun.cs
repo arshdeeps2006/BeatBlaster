@@ -7,6 +7,7 @@ public class enemy : MonoBehaviour
     public SimpleShoot shooter;
     public float shootInterval = 2f;
     private float shootTimer = 3.3f;
+    public Zmotion Player;
 
     void Start()
     {   
@@ -48,6 +49,8 @@ public class enemy : MonoBehaviour
     public void Dead(Vector3 hitPoint)
     {
         Debug.Log("Enemy died at");
+
+        Player.score += Random.Range(20,50);
 
         var animator = GetComponent<Animator>();
         if (animator != null) animator.enabled = false;
